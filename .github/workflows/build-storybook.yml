@@ -40,7 +40,7 @@ jobs:
           mv storybook-static storybook/${GITHUB_REF##*/}
           git add .
           git status
-          git commit -m "Deploy storybook for ${GITHUB_REF##*/}." --allow-empty
+          git commit -m "Deploy storybook for ${GITHUB_REF##*/}."
           git pull --no-edit --quiet
           git push origin gh-pages
         env:
